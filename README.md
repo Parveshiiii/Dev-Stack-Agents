@@ -19,11 +19,12 @@ These agents were built on a foundation of core principles to ensure they provid
 
 ## Table of Contents
 
-- [The Principal Agent Roster](#-the-principal-agent-roster)
-- [Usage & Best Practices](#-usage--best-practices)
-- [Example Workflows](#-example-workflows)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [The Principal Agent Roster](#the-principal-agent-roster)
+- [Integration with Claude Code](#integration-with-claude-code)
+- [Usage & Best Practices](#usage--best-practices)
+- [Example Workflows](#example-workflows)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## 🤖 The Principal Agent Roster
 
@@ -106,6 +107,30 @@ Here is the complete roster of your 50-agent expert team, organized by their cor
 -   **`risk-manager`**: Identifies, assesses, and mitigates business and financial risks.
 -   **`search-specialist`**: Conducts deep market research, competitive analysis, and fact-checking.
 -   **`customer-support`**: Manages customer communications, develops support workflows, and creates help documentation.
+
+## Integration with Claude Code
+
+This agent collection is designed to be seamlessly integrated into AI-powered development environments like **Claude Code**. By loading these agent definitions, you transform your coding assistant from a general-purpose tool into a specialized team of experts.
+
+**How it Works:**
+
+When you provide this collection to Claude Code, it indexes the 50 expert personas defined in the markdown files. Each file acts as a "prompt-sheet" that gives the AI a specific role, set of skills, and strategic principles.
+
+Once loaded, Claude Code's routing system can delegate your requests to the most appropriate expert. For example, a question about database performance will be automatically routed to the `@database-optimizer`, while a request to design a new feature will bring in the `@backend-architect` and `@ux-ui-designer`.
+
+**How to Use:**
+
+1.  **Load the Agents:** The primary step is to make your Claude Code environment aware of this agent directory. This is typically done in the settings or configuration panel of the tool, where you can specify a path to a local folder containing agent definitions. Point it to the root of this repository.
+2.  **Invoke Agents in Chat:** Once loaded, you can interact with the agents directly in your chat with Claude Code:
+    *   **Automatic Delegation:** For general tasks, simply state your goal. Claude's internal routing will pick the best agent for the job.
+        > *"My application's login page is slow. Please investigate and fix it."*
+        > (This will likely activate the `@performance-engineer`, `@devops-troubleshooter`, and relevant language pro).
+    *   **Explicit Delegation:** For specific tasks, you can call an agent by its handle (`@agent-name`) to ensure the right expert is on the case.
+        > *"@security-auditor, please perform a threat model for our new user authentication service."*
+    *   **Multi-Agent Collaboration:** Assemble a team for complex projects by mentioning multiple agents.
+        > *"@ai-engineer and @legal-advisor, I need to build a RAG pipeline that uses customer data. Design a system that is both effective and privacy-compliant."*
+
+By following this approach, you leverage the full power of this specialized agent collection, ensuring that every task is handled by an expert with the right strategic mindset.
 
 ## Usage & Best Practices
 
