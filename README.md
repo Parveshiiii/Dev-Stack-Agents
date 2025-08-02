@@ -166,7 +166,7 @@ Think of this not as invoking a tool, but as delegating a task to a senior membe
 
 ## Contributing
 
-Contributions are welcome! If you wish to add or improve an agent, please ensure it aligns with the core philosophy of principal-level expertise. Focus on strategic value, clear deliverables, and modern best practices.
+Contributions are welcomed! If you wish to add or improve an agent, please ensure it aligns with the core philosophy of principal-level expertise. Focus on strategic value, clear deliverables, and modern best practices.
 
 ## License
 
